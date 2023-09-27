@@ -7,7 +7,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/runquery")
-def qa(query:str):
+async def qa(query:str):
     os.environ['OPENAI_API_KEY'] = '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'
 
     integration_token = "secret_Pl4SjrFzxjcxWs3dW3VRZudWaY4vxbhbtFmhpBfBDAW"
