@@ -1,8 +1,6 @@
-llama-index
-uritemplate==4.1.1
+langchain==0.0.153
+llama-index==0.5.17.post1
 urllib3==1.26.16
 uvicorn==0.23.2
 wsproto==1.2.0
 yarl==1.9.2
-fastapi
-langchain
