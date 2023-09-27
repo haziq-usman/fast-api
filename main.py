@@ -16,7 +16,6 @@ app.add_middleware(
 )
 @app.get("/runquery")
 def qa(query:str):
-    os.environ['OPENAI_API_KEY'] = "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"
     # integration_token = "secret_V9k7V8eN9vK31E1CET4PMzeWJ6mDfpHBXiQHZAN6LPn"
     # page_ids = ["1c4e4b7700cb4773a4df2ed8062a2ea9"]
     # print("Starting index generatation...")
