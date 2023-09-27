@@ -5,4 +5,4 @@ uvicorn==0.23.2
 wsproto==1.2.0
 yarl==1.9.2
 fastapi
-langchain==0.0.153
+langchain
