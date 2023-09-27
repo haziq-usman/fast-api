@@ -8,6 +8,8 @@ app = FastAPI()
 
 @app.get("/runquery")
 async def qa(query:str):
+    os.environ['OPENAI_API_KEY'] = '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'
+
     integration_token = "secret_Pl4SjrFzxjcxWs3dW3VRZudWaY4vxbhbtFmhpBfBDAW"
     page_ids = ["74b62523c28944f29340a7b8af9975ff"]
     documents = NotionPageReader(integration_token=integration_token).load_data(
