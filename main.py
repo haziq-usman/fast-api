@@ -19,4 +19,4 @@ async def qa(query:str):
 
     # set Logging to DEBUG for more detailed outputs
     query_engine = index.as_query_engine()
-    return {"response":query_engine.query(query).response}
+    return {"response": await query_engine.query(query).response}
