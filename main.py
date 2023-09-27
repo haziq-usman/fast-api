@@ -7,7 +7,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/runquery")
-async def qa(query:str):
+def qa(query:str):
     os.environ['OPENAI_API_KEY'] = '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'
 
     integration_token = "secret_Pl4SjrFzxjcxWs3dW3VRZudWaY4vxbhbtFmhpBfBDAW"
@@ -19,4 +19,5 @@ async def qa(query:str):
 
     # set Logging to DEBUG for more detailed outputs
     query_engine = index.as_query_engine()
-    return {"response": await query_engine.query(query).response}
+    response = query_engine.query(query)
+    return {"response": response}
