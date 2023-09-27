@@ -1,8 +1,7 @@
-import logging
-import sys
-from langchain.chat_models import ChatOpenAI
-from llama_index import NotionPageReader, GPTSimpleVectorIndex, ServiceContext, LLMPredictor
-import os
+# from langchain.chat_models import ChatOpenAI
+from llama_index import GPTSimpleVectorIndex
+# from llama_index import NotionPageReader, ServiceContext, LLMPredictor
+# import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
